@@ -28,7 +28,21 @@ const tarotDeck = [
     new card('The Moon', 'You may be allowing fears to override your faith in the future. Address your feelings to rid yourself of worry.', 'themoon'),
     new card('The Sun', 'Things are working well for you and you are moving in the right direction.', 'thesun'),
     new card('Judgement', 'The future is not set in stone. It is never too late to make a change for the better', 'judgement'),
-    new card('The World', 'You are exactly where you are meant to be. You are ready for the next phase of your journey.', 'theworld')
+    new card('The World', 'You are exactly where you are meant to be. You are ready for the next phase of your journey.', 'theworld'),
+    new card('Ace of Swords', 'description','aceofswords'),
+    new card('Two of Swords', 'description','twoofswords'),
+    new card('Three of Swords', 'description','threeofswords'),
+    new card('Four of Swords', 'description','fourofswords'),
+    new card('Five of Swords', 'description','fiveofswords'),
+    new card('Six of Swords', 'description','sixofswords'),
+    new card('Seven of Swords', 'description','sevenofswords'),
+    new card('Eight of Swords', 'description','eightofswords'),
+    new card('Nine of Swords', 'description','nineofswords'),
+    new card('Ten of Swords', 'description','tenofswords'),
+    new card('Page of Swords', 'description','pageofswords'),
+    new card('Knight of Swords', 'description','knightofswords'),
+    new card('Queen of Swords', 'description','queenofswords'),
+    new card('King of Swords', 'description','kingofswords'),
 ];
 
 function randomNumber(num) {
@@ -38,7 +52,7 @@ function randomNumber(num) {
 }
 document.getElementById("draw").onclick 
     = function() {
-        const index = randomNumber(22);
+        const index = randomNumber(36);
         let currentCard = tarotDeck[index];
             document.getElementById("card").innerHTML = '<img src="images/' + 
             currentCard.image + '.jpg"><h3>' + 
