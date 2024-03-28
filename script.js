@@ -57,6 +57,20 @@ const tarotDeck = [
     new card('Knight of Wands', 'Focused action must be taken; appropriate resources are available to draw upon, and the time is ripe.', 'knightofwands'),
     new card('Queen of Wands', 'Realize you are not in the leadership role right now. Concentrate on a more supportive role that promotes the overall objectives.', 'queenofwands'),
     new card('King of Wands', 'The possibility of success is open to you. There are no substantial obstacles.', 'kingofwands'),
+    new card('Ace of Cups', 'Remembering that each person and event may possess a precious gem hidden inside. Make a conscious effort to find it.', 'aceofcups'),
+    new card('Two of Cups', 'Express the caring that you feel. Reach out to those you hold in your heart, so that they know you are thinking of them.', 'twoofcups'),
+    new card('Three of Cups', 'Call your family together to support you and trust that the results will be just what you need.', 'threeofcups'),
+    new card('Four of Cups', 'Renounce the circumstances that have brought you to a standstill.', 'fourofcups'),
+    new card('Five of Cups', 'Loss happens on the material plane. Yet what truly belongs to you cannot be taken away.', 'fiveofcups'),
+    new card('Six of Cups', 'Look at your past as a repository of wisdom to be applied judiciously in the present.escription', 'sixofcups'),
+    new card('Seven of Cups', 'Allow yourself to daydream, for dreams give you creative ideas and solutions and produce wonderful results.', 'sevenofcups'),
+    new card('Eight of Cups', 'Look deep within to understand what motivates an occasional tendency to be pessimistic or depressed.', 'eightofcups'),
+    new card('Nine of Cups', 'The best faculties to use in this situation are the intuitive ones.', 'nineofcups'),
+    new card('Ten of Cups', 'Share abundantly with all the levels of people who are involved in this creative endeavor.', 'tenofcups'),
+    new card('Page of Cups', 'Make yourself fully available for whatever is needed.', 'pageofcups'),
+    new card('Knight of Cups', 'This is the moment to apply yourself fully.', 'knightofcups'),
+    new card('Queen of Cups', 'Exercise your empathy. Be nurturing to others in a way that allows them to understand what it is all about.', 'queenofcups'),
+    new card('King of Cups', 'Support others with your strength and wisdom.', 'kingofcups'),
 ];
 
 function randomNumber(num) {
@@ -66,7 +80,7 @@ function randomNumber(num) {
 }
 document.getElementById("draw").onclick 
     = function() {
-        const index = randomNumber(36);
+        const index = randomNumber(50);
         let currentCard = tarotDeck[index];
             document.getElementById("card").innerHTML = '<img src="images/' + 
             currentCard.image + '.jpg"><h3>' + 
