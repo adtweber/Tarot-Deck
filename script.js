@@ -71,6 +71,20 @@ const tarotDeck = [
     new card('Knight of Cups', 'This is the moment to apply yourself fully.', 'knightofcups'),
     new card('Queen of Cups', 'Exercise your empathy. Be nurturing to others in a way that allows them to understand what it is all about.', 'queenofcups'),
     new card('King of Cups', 'Support others with your strength and wisdom.', 'kingofcups'),
+    new card('Ace of Pentacles', 'Take small, steady steps toward your long-term goal and you will accumulate magnificent results.', 'aceofpentacles'),
+    new card('Two of Pentacles', 'Do not allow yourself to be coaxed into premature decisions or actions.', 'twoofpentacles'),
+    new card('Three of Pentacles', 'Let the world see your skills and talents.', 'threeofpentacles'),
+    new card('Four of Pentacles', 'Study the responsibilities you have inherited rather than just looking at the advantages they represent.', 'fourofpentacles'),
+    new card('Five of Pentacles', 'Pooling resources allows you to make bolder moves and larger investments in future projects.', 'fiveofpentacles'),
+    new card('Six of Pentacles', 'Think of yourself as someone who can assist others in refining their skills and talents and using them successfully.', 'sixofpentacles'),
+    new card('Seven of Pentacles', 'Success is won by perseverance. Be resolute in the use of your time and energy.', 'sevenofpentacles'),
+    new card('Eight of Pentacles', 'When you dedicate yourself to producing quality work, you will gain greater freedom all the way around.', 'eightofpentacles'),
+    new card('Nine of Pentacles', 'Realize you are free to create a secure, enduring, and satisfying lifestyle for yourself. Look for ways to share it with those who have helped you along the way.', 'nineofpentacles'),
+    new card('Ten of Pentacles', 'You have the potential power to be a benefactor.', 'tenofpentacles'),
+    new card('Page of Pentacles', 'The open-minded novice can look at a situation with fresh eyes and get down to the essentials with confidence.', 'pageofpentacles'),
+    new card('Knight of Pentacles', 'Your resources will enhance an endeavor significantly and you can reap many blessings as a result of your participation.', 'knightofpentacles'),
+    new card('Queen of Pentacles', 'Be confident that if you express your truth, you will not have to worry about the consequences. You will remain safe and sound.', 'queenofpentacles'),
+    new card('King of Pentacles', 'Project all the confidence you can muster, as if you already know your plans are working and your goal is secured.', 'kingofpentacles'),
 ];
 
 function randomNumber(num) {
@@ -80,7 +94,7 @@ function randomNumber(num) {
 }
 document.getElementById("draw").onclick 
     = function() {
-        const index = randomNumber(50);
+        const index = randomNumber(78);
         let currentCard = tarotDeck[index];
             document.getElementById("card").innerHTML = '<img src="images/' + 
             currentCard.image + '.jpg"><h3>' + 
