@@ -51,7 +51,7 @@ const tarotDeck = [
     new card('Six of Wands', 'Fearlessly act on your convictions and others will be inspired to support your ideals.', 'sixofwands'),
     new card('Seven of Wands', 'Rouse your ambition and the competitive aspects of your nature to push beyond limits. Launch yourself.', 'sevenofwands'),
     new card('Eight of Wands', 'Recent successes provide confidence to accomplish more.', 'eightofwands'),
-    new card('Nine of Wands', 'There is an important place for rest and recuperation in any endeavor.', 'ninefwands'),
+    new card('Nine of Wands', 'There is an important place for rest and recuperation in any endeavor.', 'nineofwands'),
     new card('Ten of Wands', 'Rediscover the idealism and optimism of your youth to reinvigorate your vision.', 'tenofwands'),
     new card('Page of Wands', 'Quietly gather information that will help you direct a situation to unity.', 'pageofwands'),
     new card('Knight of Wands', 'Focused action must be taken; appropriate resources are available to draw upon, and the time is ripe.', 'knightofwands'),
@@ -87,17 +87,39 @@ const tarotDeck = [
     new card('King of Pentacles', 'Project all the confidence you can muster, as if you already know your plans are working and your goal is secured.', 'kingofpentacles'),
 ];
 
+
 function randomNumber(num) {
     const randomNumber = 
     Math.floor(Math.random() * num);
     return randomNumber;
 }
-document.getElementById("draw").onclick 
+
+document.getElementById("draw-first-card").onclick 
     = function() {
         const index = randomNumber(78);
         let currentCard = tarotDeck[index];
-            document.getElementById("card").innerHTML = '<img src="images/' + 
+            document.getElementById("situation-card").innerHTML = '<img src="images/' + 
             currentCard.image + '.jpg"><h3>' + 
             currentCard.name + '</h3><p>' + 
-            currentCard.description + '</p>';
+            currentCard.description + '</p>'; 
+    }
+
+    document.getElementById("draw-second-card").onclick 
+    = function() {
+        const index = randomNumber(78);
+        let currentCard = tarotDeck[index];
+            document.getElementById("action-card").innerHTML = '<img src="images/' + 
+            currentCard.image + '.jpg"><h3>' + 
+            currentCard.name + '</h3><p>' + 
+            currentCard.description + '</p>'; 
+    }
+
+    document.getElementById("draw-third-card").onclick 
+    = function() {
+        const index = randomNumber(78);
+        let currentCard = tarotDeck[index];
+            document.getElementById("outcome-card").innerHTML = '<img src="images/' + 
+            currentCard.image + '.jpg"><h3>' + 
+            currentCard.name + '</h3><p>' + 
+            currentCard.description + '</p>'; 
     }
