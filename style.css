@@ -1,28 +1,55 @@
 h1 {
     text-align: center;
+    font-family: Georgia, serif;
+}
+
+.refresh-button {
+    font-family: Georgia, serif;
 }
 
 #container {
     display: flex;
+    font-family: Georgia, serif;
 }
 
 #situation-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     height: auto;
     width: auto;
     text-align: center;
     padding: 3em;
+    margin: auto;
+    font-family: Georgia, serif;
 }
 
 #action-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     height: auto;
     width: auto;
     text-align: center;
     padding: 3em;
+    margin: auto;
+    font-family: Georgia, serif;
 }
 
 #outcome-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     height: auto;
     width: auto;
     text-align: center;
     padding: 3em;
+    margin: auto;
+    font-family: Georgia, serif;
 }
+
+img {
+    height: 500px;
+    width: 300px;
+}
+
