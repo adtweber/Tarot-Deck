@@ -87,6 +87,13 @@ const tarotDeck = [
     new card('King of Pentacles', 'Project all the confidence you can muster, as if you already know your plans are working and your goal is secured.', 'kingofpentacles'),
 ];
 
+const refreshButton = document.querySelector('.refresh-button');
+
+const refreshPage = () => {
+    location.reload();
+}
+refreshButton.addEventListener('click', refreshPage)
+
 
 function randomNumber(num) {
     const randomNumber = 
@@ -123,3 +130,5 @@ document.getElementById("draw-first-card").onclick
             currentCard.name + '</h3><p>' + 
             currentCard.description + '</p>'; 
     }
+
+

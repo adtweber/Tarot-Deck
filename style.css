@@ -1,5 +1,28 @@
+h1 {
+    text-align: center;
+}
+
 #container {
-    height: 900px;
-    width: 900px;
     display: flex;
+}
+
+#situation-card {
+    height: auto;
+    width: auto;
+    text-align: center;
+    padding: 3em;
+}
+
+#action-card {
+    height: auto;
+    width: auto;
+    text-align: center;
+    padding: 3em;
+}
+
+#outcome-card {
+    height: auto;
+    width: auto;
+    text-align: center;
+    padding: 3em;
 }
