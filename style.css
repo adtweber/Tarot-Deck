@@ -3,6 +3,24 @@ h1 {
     font-family: Georgia, serif;
 }
 
+body {
+    background-image: url("images/background2.jpg");
+    /* background-size: 1470px; */
+    background-size: cover;
+}
+
+img {
+    height: 500px;
+    width: 300px;
+    opacity: 0.5;
+    transition: opacity 0.5s;
+}
+    
+img:hover {
+    opacity: 1;
+    
+}
+
 .refresh-button {
     font-family: Georgia, serif;
 }
@@ -13,9 +31,6 @@ h1 {
 }
 
 #situation-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     height: auto;
     width: auto;
     text-align: center;
@@ -25,9 +40,6 @@ h1 {
 }
 
 #action-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     height: auto;
     width: auto;
     text-align: center;
@@ -37,9 +49,6 @@ h1 {
 }
 
 #outcome-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     height: auto;
     width: auto;
     text-align: center;
@@ -47,9 +56,3 @@ h1 {
     margin: auto;
     font-family: Georgia, serif;
 }
-
-img {
-    height: 500px;
-    width: 300px;
-}
-

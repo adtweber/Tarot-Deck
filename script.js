@@ -90,7 +90,7 @@ const tarotDeck = [
 function shuffleArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
-        [array[i], array[j]] = [array[j], array[i]]; // Swap elements
+        [array[i], array[j]] = [array[j], array[i]];
     }
     return array;
 }
@@ -116,16 +116,14 @@ function placeCard(id) {
     currentCard.description + '</p>'; 
 }
 
-document.getElementById("draw-first-card").onclick = function() { 
+document.getElementById('draw-first-card').onclick = function() { 
         placeCard('situation-card')
     }
 
-    document.getElementById("draw-second-card").onclick = function() {
-        placeCard('action-card')
-    }
+document.getElementById('draw-second-card').onclick = function() {
+    placeCard('action-card')
+}
 
-    document.getElementById("draw-third-card").onclick = function() {
-        placeCard('outcome-card')
-    }
-
-
+document.getElementById('draw-third-card').onclick = function() {
+    placeCard('outcome-card')
+}
