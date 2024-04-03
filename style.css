@@ -19,6 +19,7 @@ img {
     width: 300px;
     opacity: 0.5;
     transition: opacity 0.5s;
+    border: 2px solid green;
 }
 
 img:hover {
@@ -35,14 +36,14 @@ img:hover {
     display: flex;
     font-family: Georgia, serif;
     color: white;
+    border: 1px solid white;
 }
 
 #situation-card {
-    display: block;
-    height: auto;
-    width: auto;
+    height: 700px;
+    width: 700px;
     text-align: center;
-    padding: 3em;
+    padding: 5em;
     margin: auto;
     font-family: Georgia, serif;
     color: white;
@@ -55,11 +56,10 @@ img:hover {
 }
 
 #action-card {
-    display: block;
-    height: auto;
-    width: auto;
+    height: 700px;
+    width: 700px;
     text-align: center;
-    padding: 3em;
+    padding: 5em;
     margin: auto;
     font-family: Georgia, serif;
     color: white;
@@ -71,11 +71,10 @@ img:hover {
 }
 
 #outcome-card {
-    display: block;
-    height: auto;
-    width: auto;
+    height: 700px;
+    width: 700px;
     text-align: center;
-    padding: 3em;
+    padding: 5em;
     margin: auto;
     font-family: Georgia, serif;
     color: white;
