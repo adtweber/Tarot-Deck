@@ -129,10 +129,10 @@ document.getElementById('draw-third-card').onclick = function() {
 }
 
 function anotherReading() {
-    popup = window.confirm('Another reading?')
+    popup = window.confirm('Ask another question?')
 }
 
-setTimeout(anotherReading, 60000);
+setTimeout(anotherReading, 60000)
 
 
 // let text;
