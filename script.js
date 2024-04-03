@@ -127,3 +127,17 @@ document.getElementById('draw-second-card').onclick = function() {
 document.getElementById('draw-third-card').onclick = function() {
     placeCard('outcome-card')
 }
+
+function anotherReading() {
+    popup = window.confirm('Another reading?')
+}
+
+setTimeout(anotherReading, 60000);
+
+
+// let text;
+// if (confirm("Press a button!") == true) {
+//     text = "You pressed OK!";
+// } else {
+//     text = "You canceled!";
+// }

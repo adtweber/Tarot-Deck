@@ -1,14 +1,33 @@
-h1 {
+.header {
+    color: white;
+    background-color: goldenrod;
+    text-align: center;
+    font-family: Georgia, serif;
+}
+
+/* h1 {
     text-align: center;
     font-family: Georgia, serif;
     color: white;
+} */
+/* 
+.title {
+    color: white;
+    background-color: goldenrod;
+} */
+
+.instructions {
+    /* color: white;
+    text-align: center; */
+    font-size: medium;
+    /* font-family: Georgia, serif; */
 }
 
 body {
     background-image: url("images/background.jpg");
     /* background-size: 1470px; */
     background-size: cover;
-}
+} 
 
 img {
     height: 500px;
@@ -23,6 +42,8 @@ img:hover {
 
 .refresh-button {
     font-family: Georgia, serif;
+    display: block;
+    margin: auto;
 }
 
 #container {
@@ -32,6 +53,7 @@ img:hover {
 }
 
 #situation-card {
+    display: block;
     height: auto;
     width: auto;
     text-align: center;
@@ -48,6 +70,7 @@ img:hover {
 }
 
 #action-card {
+    display: block;
     height: auto;
     width: auto;
     text-align: center;
@@ -63,6 +86,7 @@ img:hover {
 }
 
 #outcome-card {
+    display: block;
     height: auto;
     width: auto;
     text-align: center;
