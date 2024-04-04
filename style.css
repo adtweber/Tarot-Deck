@@ -1,5 +1,5 @@
 .header {
-    color: white;
+    color: black;
     background-color: goldenrod;
     text-align: center;
     font-family: Georgia, serif;
@@ -18,8 +18,8 @@ img {
     height: 500px;
     width: 300px;
     opacity: 0.5;
-    transition: opacity 0.5s;
-    border: 2px solid green;
+    transition: opacity 0.5;
+    border: 5px solid goldenrod;
 }
 
 img:hover {
@@ -35,8 +35,6 @@ img:hover {
 #container {
     display: flex;
     font-family: Georgia, serif;
-    color: white;
-    border: 1px solid white;
 }
 
 #situation-card {
@@ -52,7 +50,6 @@ img:hover {
 #situation-card:hover {
     opacity: 1;
     transform: scale(1.1);
-    
 }
 
 #action-card {

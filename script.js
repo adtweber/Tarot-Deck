@@ -116,6 +116,15 @@ function placeCard(id) {
     currentCard.description + '</p>'; 
 }
 
+const audio = new Audio('sounds/cardbeingdealt.mp3');
+const buttons = document.querySelectorAll('button');
+
+buttons.forEach(button => {
+    button.addEventListener('click', () => {
+    audio.play();
+    });
+});
+
 document.getElementById('draw-first-card').onclick = function() { 
         placeCard('situation-card')
     }
