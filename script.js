@@ -110,10 +110,14 @@ function randomNumber(num) {
 }
 function placeCard(id) {
     const currentCard = tarotDeck.pop()
-    document.getElementById(id).innerHTML = '<img src="images/' + 
-    currentCard.image + '.jpg"><h3>' + 
-    currentCard.name + '</h3><p>' + 
-    currentCard.description + '</p>'; 
+    document.getElementById(id).innerHTML = '<h3>' + currentCard.name +
+    '</h3><p>' + currentCard.description + '</p>' +
+    '<p><img src="images/' + 
+    currentCard.image + '.jpg"></p>';
+
+
+    // currentCard.name + '</h3><p>' + 
+    // currentCard.description + '</p>'; 
 }
 
 const audio = new Audio('sounds/cardbeingdealt.mp3');
