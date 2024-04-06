@@ -92,6 +92,6 @@ Submit an issue [here](https://github.com/adtweber/Tarot-Deck/issues) explaining
 
 
 ## License
-MIT
+[MIT](https://github.com/adtweber/Tarot-Deck/blob/main/LICENSE.txt)
 
 
